@@ -1,198 +1,107 @@
-
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0%;
+  margin: 0%;
 }
-
-
-body {
-  background: url(./netbg.jpg) no-repeat center center/cover;
-  color: #fff;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.header {
-  position: absolute;
-  top: 20px;
-  left: 40px;
-}
-
-.logo {
-  height: 45px;
-  width: auto;
-}
-
 
 .main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./netbg.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  z-index: -20;
 }
 
-
-.signin-container {
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 3rem 3.5rem;
-  border-radius: 8px;
-  max-width: 400px;
-  width: 90%;
+.text {
+  position: absolute;
   display: flex;
+  margin-top: 2%;
+  margin-left: 2%;
+  height: 5vh;
+  width: 10vw;
+  align-self: flex-start;
+  z-index: 20;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 27vw;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+}
+
+.small {
+  margin-top: 20%;
   flex-direction: column;
-}
-
-.signin-title {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-
-
-.input-field {
-  width: 100%;
-  padding: 0.9rem 1rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 4px;
-  background-color: #333;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.input-field::placeholder {
-  color: #aaa;
-}
-
-
-.btn {
-  width: 100%;
-  padding: 0.9rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.btn-primary {
-  background-color: #e50914;
-  color: white;
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
-
-.btn-primary:hover {
-  background-color: #f6121d;
-}
-
-.btn-secondary {
-  background-color: #454545;
-  color: white;
-  margin-top: 0.8rem;
-}
-
-.btn-secondary:hover {
-  background-color: #5a5a5a;
-}
-
-
-.divider {
-  text-align: center;
-  margin: 1rem 0;
-  color: #b3b3b3;
-}
-
-
-.forgot-link {
-  display: block;
-  text-align: center;
-  color: #b3b3b3;
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-}
-
-.forgot-link:hover {
-  text-decoration: underline;
-}
-
-.remember {
-  margin-top: 1rem;
-  font-size: 0.9rem;
   display: flex;
   align-items: center;
-  gap: 8px;
+  height: 80vh;
+  width: 30vw;
+  color: azure;
+  font-size: 2em;
 }
 
-.signup-text {
-  margin-top: 1.5rem;
-  font-size: 0.95rem;
-  color: #b3b3b3;
+.sig {
+  height: 4em;
+  width: 70%;
 }
 
-.signup-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
+.sig1 {
+  height: 3rem;
+  width: 70%;
+  background-color: red;
 }
 
-.signup-link:hover {
-  text-decoration: underline;
+.sig2 {
+  width: 70%;
+  background-color: rgb(138, 138, 138);
 }
 
-
-.recaptcha-text {
-  font-size: 0.8rem;
-  color: #8c8c8c;
-  margin-top: 1rem;
-  line-height: 1.4;
+.new {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.learn-more {
-  color: #0071eb;
-  text-decoration: none;
+.new1 {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+}
+.new2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 20%;
 }
 
-.learn-more:hover {
-  text-decoration: underline;
+#check {
+  height: 1em;
+  width: auto;
+}
+#check1 {
+  width: 100%;
+  font-size: 18px;
+  align-self: center;
 }
 
-
-@media (max-width: 768px) {
-  .signin-container {
-    padding: 2rem;
-    max-width: 90%;
-  }
-
-  .signin-title {
-    font-size: 1.8rem;
-  }
-
-  .btn,
-  .input-field {
-    font-size: 0.95rem;
-  }
-
-  .logo {
-    height: 35px;
-  }
+#check2 {
+  width: 100%;
+  font-size: 15px;
 }
 
-@media (max-width: 480px) {
-  .signin-container {
-    padding: 1.5rem;
-  }
+.sig2:hover {
+  background-color: rgb(126, 126, 126);
+}
 
-  .signin-title {
-    font-size: 1.5rem;
-  }
-
-  .recaptcha-text {
-    font-size: 0.75rem;
-  }
+.sig1:hover {
+  background-color: rgb(202, 20, 20);
 }
